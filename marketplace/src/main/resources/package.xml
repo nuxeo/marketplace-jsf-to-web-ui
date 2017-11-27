@@ -1,0 +1,24 @@
+<!-- See documentation at http://doc.nuxeo.com/x/HgIz -->
+<package type="addon" name="nuxeo-jsf-to-web-ui" version="@VERSION@">
+  <title>Nuxeo JSF To Web UI</title>
+  <description>
+    <p>The Nuxeo JSF to Web UI addon adds the ability to redirect JSF links to the Web UI.</p>
+  </description>
+  <home-page>https://doc.nuxeo.com/nxdoc/nuxeo-jsf-to-web-ui/</home-page>
+  <vendor>Nuxeo</vendor>
+  <installer restart="true" />
+  <uninstaller restart="true" />
+  <nuxeo-validation>nuxeo_certified</nuxeo-validation>
+  <production-state>production_ready</production-state>
+  <supported>true</supported>
+  <platforms>
+    <platform>server-@DISTRIB_VERSION@</platform>
+    <platform>server-@DISTRIB_VERSION@-*</platform>
+  </platforms>
+  <dependencies>
+    <package>nuxeo-web-ui</package>
+  </dependencies>
+  <license>Apache License, Version 2.0</license>
+  <license-url>http://www.apache.org/licenses/LICENSE-2.0.html</license-url>
+  <visibility>PUBLIC</visibility>
+</package>
