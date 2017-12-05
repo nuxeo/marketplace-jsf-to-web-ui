@@ -10,11 +10,11 @@
   <artifactId>marketplace-jsf-to-web-ui-parent</artifactId>
   <packaging>pom</packaging>
   <name>Nuxeo JSF To Web UI Marketplace package</name>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.1-SNAPSHOT</version>
 
   <properties>
     <marketplace.web.ui.version>1.0.1</marketplace.web.ui.version>
-    <nuxeo.jsf.to.web.ui.version>8.10-SNAPSHOT</nuxeo.jsf.to.web.ui.version>
+    <nuxeo.jsf.to.web.ui.version>8.10-HF-21-SNAPSHOT</nuxeo.jsf.to.web.ui.version>
   </properties>
 
   <modules>
