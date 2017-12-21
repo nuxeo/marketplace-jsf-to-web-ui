@@ -3,17 +3,17 @@
   <parent>
     <groupId>org.nuxeo.ecm.distribution</groupId>
     <artifactId>nuxeo-distribution</artifactId>
-    <version>9.10-SNAPSHOT</version>
+    <version>9.10</version>
   </parent>
 
   <groupId>org.nuxeo.web.ui</groupId>
   <artifactId>marketplace-jsf-to-web-ui-parent</artifactId>
   <packaging>pom</packaging>
   <name>Nuxeo JSF To Web UI Marketplace package</name>
-  <version>1.1.0-SNAPSHOT</version>
+  <version>1.1.0</version>
 
   <properties>
-    <marketplace.web.ui.version>2.2.0-SNAPSHOT</marketplace.web.ui.version>
+    <marketplace.web.ui.version>2.2.0</marketplace.web.ui.version>
   </properties>
 
   <modules>
