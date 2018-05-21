@@ -19,6 +19,7 @@
 package org.nuxeo.ftest.web.ui;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import org.junit.After;
 import org.junit.Before;
@@ -67,14 +68,12 @@ public class ITJSFToWebUITest extends AbstractTest {
         String url = String.format(JSF_ID_URL, NUXEO_URL, docId);
         driver.get(url);
         String currentURL = driver.getCurrentUrl();
-        String expectedURL = String.format(WEB_UI_ID_URL, NUXEO_URL, docId);
-        assertEquals(expectedURL, URIUtils.getURIPath(currentURL));
+        checkURL(URIUtils.getURIPath(currentURL));
 
         url = String.format(JSF_PATH_URL, NUXEO_URL, WORKSPACE_PATH);
         driver.get(url);
         currentURL = driver.getCurrentUrl();
-        expectedURL = String.format(WEB_UI_PATH_URL, NUXEO_URL, WORKSPACE_PATH);
-        assertEquals(expectedURL, URIUtils.getURIPath(currentURL));
+        checkURL(URIUtils.getURIPath(currentURL));
         // logout avoiding JS error check
         driver.get(NUXEO_URL + "/logout");
     }
@@ -82,5 +81,13 @@ public class ITJSFToWebUITest extends AbstractTest {
     @Override
     public void checkJavascriptError() {
         // avoid JS error check for this test
+    }
+
+    protected void checkURL(String url) {
+        String expectedIdURL = String.format(WEB_UI_ID_URL, NUXEO_URL, docId);
+        String expectedPathURL = String.format(WEB_UI_PATH_URL, NUXEO_URL, WORKSPACE_PATH);
+        if (!(expectedIdURL.equals(url) || expectedPathURL.equals(url))) {
+            fail(String.format("URL '%s' does not equals '%s' nor '%s'", url, expectedIdURL, expectedPathURL));
+        }
     }
 }
