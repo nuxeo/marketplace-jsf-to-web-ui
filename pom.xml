@@ -14,7 +14,7 @@
 
   <properties>
     <marketplace.web.ui.version>1.0.1</marketplace.web.ui.version>
-    <nuxeo.jsf.to.web.ui.version>8.10-HF44-SNAPSHOT</nuxeo.jsf.to.web.ui.version>
+    <nuxeo.jsf.to.web.ui.version>8.10-HF45-SNAPSHOT</nuxeo.jsf.to.web.ui.version>
   </properties>
 
   <modules>
