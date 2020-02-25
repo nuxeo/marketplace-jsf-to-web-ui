@@ -13,7 +13,7 @@
   <version>1.1.1-SNAPSHOT</version>
 
   <properties>
-    <marketplace.web.ui.version>2.2.41-SNAPSHOT</marketplace.web.ui.version>
+    <marketplace.web.ui.version>2.2.42-SNAPSHOT</marketplace.web.ui.version>
   </properties>
 
   <modules>
